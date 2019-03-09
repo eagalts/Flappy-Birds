@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 50269464596519376}
   - component: {fileID: 60425607264571726}
   - component: {fileID: 114032390580195954}
+  - component: {fileID: 95339620052735348}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -102,6 +103,24 @@ PolygonCollider2D:
       - {x: 0.45999998, y: -0.185}
       - {x: 0.58, y: -0.105}
       - {x: 0.59, y: -0.044999998}
+--- !u!95 &95339620052735348
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1014158937004860}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d698cb598a9763348864e4d56dd755a6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114032390580195954
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,10 +129,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1014158937004860}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a14f4ff9747d6cb4491e8e56e420bf63, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b19991588938b34b81f43730e7ea465, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb2d: {fileID: 50269464596519376}
   jumpForce: 200
 --- !u!212 &212780309551335898
 SpriteRenderer:

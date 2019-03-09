@@ -11,7 +11,6 @@ public class Bird : MonoBehaviour {
 	private float jumpForce = 200f;
 
 	// Use this for initialization
-	
 	void Start () {
 		rb2d = GetComponent<Rigidbody2D>();
 		anim = GetComponent<Animator>();
@@ -20,16 +19,14 @@ public class Bird : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		if (!isDead) { // 
-			if (Input.GetKeyDown(KeyCode.Space)  ||
-				Input.GetMouseButtonDown(0)) 
-				{
+			if (Input.GetKeyDown(KeyCode.Space) ||
+				Input.GetMouseButtonDown(0)) {
+					anim.SetTrigger("Flap");
 					rb2d.velocity = new Vector2(0, 0);
 					rb2d.AddForce(transform.up * jumpForce);
-					anim.SetTrigger("Flap");
-				}
 			}
 		}
-
+	}
 
 	void OnCollisionEnter2D(Collision2D other) {
 		anim.SetTrigger("Die");

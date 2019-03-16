@@ -5,8 +5,6 @@
 
 Версия Unity: 2018.3.8f1
 
-Последнее обновление: 16.3.2019
-
-release
+Последнее обновление: 16.3.2019 release
 
 Скачать игру (windows): https://github.com/egors000/Flappy-Birds/blob/master/Build/Game.zip

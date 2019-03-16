@@ -13,7 +13,8 @@ public class Mover : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-
-		transform.Translate(Vector3.left * (speed * Time.fixedDeltaTime));
+		if (!Global.global.gameOver) {
+			transform.Translate(Vector3.left * (speed * Time.fixedDeltaTime));
+		}
 	}
 }
